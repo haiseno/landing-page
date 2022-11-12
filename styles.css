@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -31,6 +33,7 @@ button {
 }
 
 ul {
+    margin: 15px 0;
     list-style-type: none;
     display: flex;
     gap: 2rem;
@@ -48,18 +51,18 @@ ul {
     align-items: center;
 }
 
-.hero h1 {
+.hero-left h1 {
     font-size: 48px;
-    margin: 12px 0;
 }
 
-.hero p {
-    margin: 12px 0;
+.hero-left p {
+    margin: 10px 0;
 }
 
-.hero img {
-    min-width: 50%;
-    min-height: auto;
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 button {
@@ -67,39 +70,71 @@ button {
     background-color: #3882F6;
     border-radius: 10px;
     padding: 10px 25px;
-    border: none;   
+    border: none;  
+}
+
+.hero img {
+    max-width: 50%;
+    min-height: auto;
 }
 
 .cards h2 {
     font-size: 32px;
     text-align: center;
-    margin: 25px auto;
+    margin-top: 25px;
 }
 
 .talent-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
 }
 
 .idol-cards {
     flex: 1;
+    margin: 20px;
 }
 
 .profile {
-    min-width:300px;
+    min-width: 300px;
     min-height: auto;
     border: 5px solid #3882F6;
     border-radius: 15px;
+    padding: 12px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
 }
 
 .cards img {
     max-height: 400px;
-    max-width: auto;
+    min-width: auto;
 }
 
 .talent-cards p {
     text-align: center;
+}
+
+.testimony {
+    background-color: #E5E7EB;
+    border: 1px solid red;
+}
+
+.testimony .container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony .fanquote {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+.testimony .fan {
+    font-size: 24px;
+    font-weight: 900;
+    align-self: flex-end;
 }
