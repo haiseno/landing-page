@@ -14,7 +14,7 @@ body {
 }
 
 .navbar,
-.hero {
+.hero, {
     background-color: #1F2937;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .navbar .logo,
 .hero-left h1,
-button {
+button, {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
@@ -78,7 +78,7 @@ button {
     min-height: auto;
 }
 
-.cards h2 {
+.information h2 {
     font-size: 32px;
     text-align: center;
     margin-top: 25px;
@@ -105,7 +105,7 @@ button {
     justify-content: center;
 }
 
-.cards img {
+.information img {
     max-height: 400px;
     min-width: auto;
 }
@@ -137,4 +137,12 @@ button {
     font-size: 24px;
     font-weight: 900;
     align-self: flex-end;
+}
+
+.footer {
+    background-color: #1F2937;
+    font-size: 16px;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 25px 0;
 }
