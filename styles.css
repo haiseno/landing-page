@@ -14,7 +14,7 @@ body {
 }
 
 .navbar,
-.hero, {
+.hero {
     background-color: #1F2937;
 }
 
@@ -26,7 +26,8 @@ body {
 
 .navbar .logo,
 .hero-left h1,
-button, {
+button,
+.modal-left h3 {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
@@ -40,7 +41,8 @@ ul {
 }
 
 .navbar a,
-.hero-left p {
+.hero-left p,
+.modal-left p {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
@@ -116,7 +118,6 @@ button {
 
 .testimony {
     background-color: #E5E7EB;
-    border: 1px solid red;
 }
 
 .testimony .container {
@@ -124,7 +125,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .testimony .fanquote {
@@ -137,6 +137,31 @@ button {
     font-size: 24px;
     font-weight: 900;
     align-self: flex-end;
+}
+
+.signup .container{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    min-height: 200px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-left p {
+    margin: 5px 0;
+    color: white;
+}
+
+.modal button {
+    border: 2px solid white;
 }
 
 .footer {
